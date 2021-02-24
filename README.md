@@ -1,8 +1,7 @@
 
 
-[![Build Status](https://travis-ci.org/yandex-money/yandex-money-sdk-php.svg?branch=master)](https://travis-ci.org/yandex-money/yandex-money-sdk-php)
 
-# PHP Yandex.Money API SDK
+# [UNOFFICIAL] PHP Yoomoney SDK PHP [forked from Yandex.Money SDK PHP](https://github.com/romkavt/yandex-money-sdk-php)
 
 ## Requirements
 
@@ -11,31 +10,31 @@ PHP 5.3 or above
 
 ## Links
 
-1. Yandex.Money API page: [Ru](http://api.yandex.ru/money/),
-[En](http://api.yandex.com/money/)
+1. Yoomoney API page: [Ru](http://yoomoney.ru),
+[En](http://yoomoney.ru)
 2. [sample app](https://github.com/yandex-money/yandex-money-sdk-php-sample)
 
 ## Getting started
 
 ### Installation
 
-1. Add `"yandex-money/yandex-money-sdk-php": "3.0.*"` to `composer.json` of your application. Or clone repo to your project.
+1. Add `"daniel-spravtsev/yoomoney-sdk-php": "3.0.*"` to `composer.json` of your application. Or clone repo to your project.
 2. If you are using composer - simply use `require_once 'vendor/autoload.php';` otherwise paste following code
     ```php
-    // For payments from the Yandex.Money wallet
+    // For payments from the Yoomoney wallet
     require_once '/path/to/cloned/repo/lib/api.php';
 
     // For payments from bank cards without authorization
     require_once '/path/to/cloned/repo/lib/external_payment.php';
     ```
 
-### Payments from the Yandex.Money wallet
+### Payments from the Yoomoney wallet
 
-Using Yandex.Money API requires following steps
+Using Yoomoney API requires following steps
 
 1. Obtain token URL and redirect user's browser to Yandex.Money service.
 Note: `client_id`, `redirect_uri`, `client_secret` are constants that you get,
-when [register](https://sp-money.yandex.ru/myservices/new.xml) app in Yandex.Money API.
+when [register](https://yoomoney/myservices/new.xml) app in Yandex.Money API.
 
     ```php
     use \YandexMoney\API;
