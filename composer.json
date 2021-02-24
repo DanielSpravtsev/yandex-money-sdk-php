@@ -1,5 +1,5 @@
 {
-    "name": "DanielSpravtsev/yoomoney-sdk-php",
+    "name": "daniel-spravtsev/yoomoney-sdk-php",
     "description": "Yoomoney API SDK for PHP (forked from yandex.money sdk)",
     "keywords": ["yoomoney", "money", "php", "sdk", "payment", "yoomoney"],
     "type": "library",
