@@ -182,7 +182,7 @@ class API extends BaseAPI {
         $scope) {
         $params = sprintf(
             "client_id=%s&response_type=%s&redirect_uri=%s&scope=%s",
-            $client_id, "code", $redirect_uri, implode(" ", $scope)
+            $client_id, "code", $redirect_uri, $scope
             );
         return sprintf("%s/oauth/authorize?%s", Config::$MONEY_URL, $params);
     }
